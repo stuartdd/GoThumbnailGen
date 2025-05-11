@@ -1,0 +1,79 @@
+{
+    "thumbNailsExec": [
+        "echo \"create: %count --> %out\"",
+        "/usr/bin/convert -auto-orient -thumbnail 200 \"%in\" \"%out\"",
+        "sleep 0.1"
+    ],
+    "thumbNailsExecFile": "../createTn.sh",
+    "thumbNailsRoot": "../pictures/thumbnails",
+    "thumbNailTimeStamp": "%y_%m_%d_%H_%M_%S_",
+    "thumbNailFileSuffix": ".jpg",
+    "thumbNailsMaxPerFile": 100,
+    "imageExtensions": [
+        ".jpg"
+    ],
+    "logPath": "../logs",
+    "logName": "ThumbNailGen",
+    "verbose": true,
+    "resources": {
+        "huw": {
+            "imageRoot": "/media/stuart/DATA/shares",
+            "imagePaths": [
+                "SchoolWork",
+                "Huw_Photos",
+                "StDavid'sWork",
+                "Archive/huw"
+            ]
+        },
+        "julie": {
+            "imageRoot": "/media/stuart/DATA/shares",
+            "imagePaths": [
+                "Huawei_camera",
+                "Documents",
+                "Downloads",
+                "Camera uploads",
+                "HtcCamera",
+                "Julie_Photos",
+                "SamsungCameraOld",
+                "SamsungCamera",
+                "LGCamera",
+                "WhatsApp",
+                "LumixCameraPictures"
+            ]
+        },
+        "stuart": {
+            "imageRoot": "/media/stuart/DATA/shares",
+            "imagePaths": [
+                "LGPhone",
+                "PixelPhoneSync",
+                "SamsungSync",
+                "SamsungSyncS3",
+                "WhatsApp",
+                "Stuart_Phone"
+            ]
+        },
+        "owain": {
+            "imageRoot": "/media/stuart/DATA/shares",
+            "imagePaths": [
+                "Owain",
+                "Archive/owain/OwainHtc",
+                "Archive/owain/Ubuntu/backgrounds",
+                "Archive/owain/Advent/My Documents/My Pictures",
+                "Archive/owain/Advent/My Documents/Owain's Phone",
+                "Archive/owain/isys/My Documents/My Pictures",
+                "SDCard20171227/pictures"
+            ]
+        },
+        "shared": {
+            "imageRoot": "/media/stuart/DATA/shares",
+            "imagePaths": [
+                "media/Dad-funeral",
+                "media/Other_Photos",
+                "media/Photos",
+                "media/Pictures",
+                "media/Scanned",
+                "media/Shed"
+            ]
+        }
+    }
+}

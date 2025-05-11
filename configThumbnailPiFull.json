@@ -1,0 +1,78 @@
+{
+    "thumbNailsExec": [
+        "echo \"create: %count --> %out\"",
+        "/usr/bin/convert -auto-orient -thumbnail 200 \"%in\" \"%out\"",
+        "sleep 0.1"
+    ],
+    "thumbNailsExecFile": "../createTn.sh",
+    "thumbNailsRoot": "../thumbnailsNew",
+    "thumbNailTimeStamp": "%y_%m_%d_%H_%M_%S_",
+    "thumbNailFileSuffix": ".jpg",
+    "imageExtensions": [
+        ".jpg"
+    ],
+    "logPath": "../thumbnailLogs",
+    "logName": "tnLogFull%y_%m_%d_%H_%M_%S.log",
+    "verbose": false,
+    "resources": {
+        "huw": {
+            "imageRoot": "/media/USBHDD1/shares",
+            "imagePaths": [
+                "SchoolWork",
+                "Huw_Photos",
+                "StDavid'sWork",
+                "Archive/huw"
+            ]
+        },
+        "julie": {
+            "imageRoot": "/media/USBHDD1/shares",
+            "imagePaths": [
+                "Huawei_camera",
+                "Documents",
+                "Downloads",
+                "Camera uploads",
+                "HtcCamera",
+                "Julie_Photos",
+                "SamsungCameraOld",
+                "SamsungCamera",
+                "LGCamera",
+                "WhatsApp",
+                "LumixCameraPictures"
+            ]
+        },
+        "stuart": {
+            "imageRoot": "/media/USBHDD1/shares",
+            "imagePaths": [
+                "LGPhone",
+                "PixelPhoneSync",
+                "SamsungSync",
+                "SamsungSyncS3",
+                "WhatsApp",
+                "Stuart_Phone"
+            ]
+        },
+        "owain": {
+            "imageRoot": "/media/USBHDD1/shares",
+            "imagePaths": [
+                "Owain",
+                "Archive/owain/OwainHtc",
+                "Archive/owain/Ubuntu/backgrounds",
+                "Archive/owain/Advent/My Documents/My Pictures",
+                "Archive/owain/Advent/My Documents/Owain's Phone",
+                "Archive/owain/isys/My Documents/My Pictures",
+                "SDCard20171227/pictures"
+            ]
+        },
+        "shared": {
+            "imageRoot": "/media/USBHDD1/shares",
+            "imagePaths": [
+                "media/Dad-funeral",
+                "media/Other_Photos",
+                "media/Photos",
+                "media/Pictures",
+                "media/Scanned",
+                "media/Shed"
+            ]
+        }
+    }
+}

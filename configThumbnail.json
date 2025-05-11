@@ -1,0 +1,55 @@
+{
+    "thumbNailsExec": [
+            "if ! [ -f %out ]; then",
+            "  echo \"create: %count --> %out\"", 
+            "  /usr/bin/convert -auto-orient -thumbnail 200 \"%in\" \"%out\"",
+            "  status=$?",
+            "  if test $status -eq 0",
+            "  then",
+            "    createdCount=$((createdCount+1))",
+            "  fi",
+            "  sleep 0.1",
+            "else",
+            "  echo \"File Exists  %out\"",
+            "  createdCount=$((createdCount+1))",
+            "fi"
+    ],
+    "thumbNailsExecFile": "../logs/createTn%n.sh",
+    "thumbNailsRoot": "../pictures/thumbnails",
+    "thumbNailTimeStamp": "%y_%m_%d_%H_%M_%S_",
+    "thumbNailFileSuffix": ".jpg",
+    "thumbNailsMaxPerFile": 2,
+    "imageExtensions": [
+        ".jpg"
+    ],
+    "logPath": "../logs",
+    "logName": "ThumbNailGen_%y_%m_%d_%H.log",
+    "logConsole": false,
+    "verbose": false,
+    "resources": {
+        "bob": {
+            "imageRoot": "../pictures/originals",
+            "imagePaths": [
+                "Bobs_Phone",
+                "WhatsApp"
+            ]
+        },
+        "bob2": {
+            "imageRoot": "../pictures/originals2",
+            "imagePaths": [
+                "Bob2s_Phone"
+            ]
+        },
+        "stuart": {
+            "imageRoot": "../pictures/originals",
+            "imagePaths": [
+                "00_WalkingTheDog",
+                "01_Original_Slides",
+                "2002-08-30_Majorca",
+                "Dad-funeral",
+                "Owain",
+                "Stuart_Phone"
+            ]
+        }
+    }
+}

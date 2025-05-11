@@ -1,0 +1,27 @@
+#!/bin/bash
+
+cd codeGen
+go run .
+if [ $? -ne 0 ]; then
+  echo "Code Generation Failed"
+  exit 1
+fi
+echo "Code Generation OK"
+cd ..
+
+go build .
+if [ $? -ne 0 ]; then
+  echo "Build Failed"
+  exit 1
+fi
+
+echo "Build OK..."
+
+## TODO first
+## sudo mount -t cifs //192.168.1.243/stuart /media/PI3/stuart -o username=stuart
+
+
+# echo "Running ./thumbnailGen configThumbnailCIFS.json "
+# ./thumbnailGen configThumbnailCIFS.json
+rm ../logs/createTn*
+./thumbnailGen configThumbnail.json
