@@ -28,20 +28,20 @@
     "verbose": false,
     "resources": {
         "bob": {
-            "imageRoot": "../pictures/originals",
+            "imageRoot": "/media/stuart/PICTURES/originals",
             "imagePaths": [
                 "Bobs_Phone",
                 "WhatsApp"
             ]
         },
         "bob2": {
-            "imageRoot": "../pictures/originals2",
+            "imageRoot": "/media/stuart/PICTURES/originals2",
             "imagePaths": [
                 "Bob2s_Phone"
             ]
         },
         "stuart": {
-            "imageRoot": "../pictures/originals",
+            "imageRoot": "/media/stuart/PICTURES/originals",
             "imagePaths": [
                 "00_WalkingTheDog",
                 "01_Original_Slides",
