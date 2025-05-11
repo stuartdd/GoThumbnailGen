@@ -1,5 +1,6 @@
 .vscode/
-  .git/
-  __*
-  *.log
-  thumbnailGen
+.git/
+__*
+*.log
+thumbnailGen
+
